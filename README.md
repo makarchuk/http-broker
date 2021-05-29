@@ -3,10 +3,10 @@
 Simple HTTP task broker
 
 ##API
-```
-PUT /{QUEUE_NAME} -- Put Message in a queue (message is a byte array from body)
-GET /{QUEUE_NAME} -- Retrieve Message from a queue. `?timeout` parameter to specify time to block for waiting for parameter
-```
+
+`PUT /{QUEUE_NAME}` -- Put Message in a queue (message is a byte array from body)  
+`GET /{QUEUE_NAME}` -- Retrieve Message from a queue. `?timeout` parameter to specify time to block for waiting for parameter. Returns 404 if queue is empty
+
 
 ##Example 
 ```
