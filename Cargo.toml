@@ -1,0 +1,17 @@
+[package]
+name = "http-broker"
+version = "0.1.0"
+authors = ["Timur Makarchuk <makarchuk@group-ib.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tide = "0.16.0"
+async-std = { version = "1.9.0", features = ["attributes"] }
+futures = "0.3.15"
+serde_url_params = "0.2.1"
+parse_duration = "2.1.1"
+
+[dev-dependencies]
+tide-testing = "0.1.3"
